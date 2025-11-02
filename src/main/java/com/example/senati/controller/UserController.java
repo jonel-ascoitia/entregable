@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
 @RestController
 @CrossOrigin(origins = "https://entregabledgamc-cabkh8d8aha8fbft.chilecentral-01.azurewebsites.net")
 public class UserController {
@@ -33,10 +32,7 @@ public class UserController {
     public Response deleteUser(@PathVariable int id){
         return  userService.deleteUser(id);
     }
-    //public ResponseEntity<User> deleteUser(@PathVariable int id) {
-    // userService.deleteUser(id);
-    // return ResponseEntity.noContent().build();
-    //}
+
 
     @PutMapping ("/api/users/{id}")
     public ResponseEntity<User> newUser(@PathVariable int id,@RequestBody User user){
