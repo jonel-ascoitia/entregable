@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 @RestController
-@CrossOrigin(origins = "https://entregabledgamc-cabkh8d8aha8fbft.chilecentral-01.azurewebsites.net")
+@CrossOrigin(origins = "http://localhost:4200/")
 public class UserController {
     @Autowired
     UserService userService;
